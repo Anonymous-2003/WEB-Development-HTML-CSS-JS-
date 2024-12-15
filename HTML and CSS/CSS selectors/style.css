@@ -1,0 +1,33 @@
+/* universal selectors */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Element selectors  */
+p{
+    background-color: orange;
+}
+
+/* id selector */
+#test{
+    color: yellow;
+}
+
+/* class selector */
+.avi{
+    color: rgb(192, 246, 255);
+}
+
+
+div>span{
+    background-color: yellow;
+    color: green;
+}
+
+/* group selector */
+h1,p{
+    color:black;
+}
+

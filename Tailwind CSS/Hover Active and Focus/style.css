@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mybtn{
+    @apply bg-slate-500 m-4 rounded-md text-sm hover:bg-black hover:text-white active:bg-blue-100 active:text-red-500 focus:bg-black focus:text-white focus:outline-red-600
+}

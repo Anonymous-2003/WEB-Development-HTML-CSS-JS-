@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling button and links</title>
+    
+    <style>
+        .container{
+            width: 250px;
+            background-color: burlywood;
+            margin: auto; /* automatically places the container to center*/
+            padding: 2px;
+            border: 4px solid black;
+        }
+        .container a{
+            color: rgb(255, 0, 93);
+            text-decoration: none;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .container a:hover{
+            background-color: rgb(147, 141, 141);
+            color:red;
+        }
+        .container a:visited{
+            color: blue;
+        }
+        .btn:hover{
+            cursor: pointer;
+        }
+        .btn:active{
+            background-color: blueviolet;
+            border: 2px solid grey;
+        }
+        .btn{
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styling button and links</h1>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero nostrum beatae aliquid quod, possimus voluptate repellat voluptatibus laborum delectus accusantium consectetur labore molestiae! Autem, reprehenderit!</p>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+        <button class="btn">insta</button>
+    </div>
+
+    
+</body>
+</html>

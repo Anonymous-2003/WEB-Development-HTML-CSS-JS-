@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+<body>
+    <form action="backend.php">
+        <div>
+            Name:<input type="text" name="name" id="" placeholder="Enter your name">
+        </div>
+        <br>
+        <div>
+            Email:<input type="email" name="email" id="" placeholder="Enter your email">
+        </div>
+        <br>
+        <div>
+            Contact:<input type="number" name="num" id="" placeholder="Enter your number">
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="gender" id=""> Female <input type="radio" name="gender" id="">
+        </div>
+        <div>
+            DOB: <input type="date" name="date" id="">
+        </div>
+        <br>
+        <div>
+            upload your image:<input type="file" name="image" id="" accept="image.jpg">
+        </div>
+        <br>
+        <div>
+          residential area: <br><textarea name="address" id=""></textarea>
+        </div>
+        <br>
+        Web Dev:<select name="options" id="">
+            <option value="">Frontend</option>
+            <option value="">Backend</option>
+            <option value=""selected>Fullstack</option>
+        </select>
+        <br>
+        <!-- Also we can use label tag as follows-->
+         <label for="studentName">Name</label>
+         <div>
+            <input type="text" name="name" id="studentName">
+         </div>
+         <br>
+         <input type="submit" value="Submit Form">
+    </form>
+
+    <p style="border: solid black;">Lorem ipsum dolor sit amet.</p>
+    <span style="border: solid black;">Lorem ipsum dolor sit amet.</span>
+    
+</body>
+</html>

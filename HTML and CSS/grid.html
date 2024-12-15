@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap:20px;
+            background-color: burlywood;
+            grid-template-areas: 'navbar navbar'  ' aside section' ' footer footer';
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #section{
+            grid-area: section;
+        }
+        footer{
+            grid-area: footer;
+        }
+        .box{
+            border: 2xp solid black;
+            background-color: blueviolet;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  class ='box' id="navbar">
+            Home Contact Services
+        </div>
+        <div  class ='box' id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ipsam?
+        </div>
+        <div  class ='box' id="section">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas iure eaque quos nobis quidem unde maxime porro beatae assumenda voluptate! Repudiandae officia eum velit iusto, modi quia temporibus repellat fugit, id atque beatae inventore maiores! Quo numquam nihil nemo architecto voluptatum accusantium placeat obcaecati temporibus ab? Ipsa necessitatibus nostrum sapiente.
+
+        </div>
+        <footer class ='box' >
+            Lorem ipsum dolor sit amet.
+        </footer>
+    </div>
+
+</body>
+</html>

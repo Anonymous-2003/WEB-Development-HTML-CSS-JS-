@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in css</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            border: 2px solid black;
+            display: flex;
+            animation-name: test1;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease; /*Animation will have slow start , move fast and have slow end */
+            /* Linear means constant speed */
+            animation-fill-mode: both;
+
+            /* shorthand property */
+            animation: test1 5s ease 2s infinite both;
+
+        }
+        @keyframes test1 {
+            /*Method 1 */
+            from{
+                top: 0px;
+                background-color: red;
+            }   
+            to{
+                top: 80px;
+                background-color: yellow;
+            }   
+                    
+                 /*method 2  */
+                 /* 0%{
+                    background-color: red;
+                 }
+                 25%{
+                    background-color: green;
+                 }
+                 50%{
+                    background-color: blue;
+
+                 }
+                 75%{
+                    background-color: yellow;
+
+                 }
+                 100%{
+                    background-color: cadetblue;
+                 }
+                    */
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Animation</h1>
+        <p>Doing stupid things in 3rd years</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        .one img{
+            float: left; /* The text will wrap the area of the image from left. */
+            margin-right: 10px; /*margin from image will be 10px right */
+        }
+        
+        .two{
+            background-color: antiquewhite;
+            overflow: auto; /*if you increase the height of image , then it will also change the height of the container accordingly. */
+        }
+            .two img{
+            float: right;
+            margin-left: 10px;
+            height: 200px;  /* The image will overflow from the div container and will occupy some space of third div container  */
+            /* so we have to use clear property on third container to wrap the content of third   */
+            } 
+        
+          
+         
+        
+        .three{
+            clear: right; /* We have use float right on second so used clear right on third */
+            background-color: rgb(220, 245, 236);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Float and clear</h1>
+    </header>
+    <main>
+        <div>
+          
+            <p class="one"><img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maiores voluptas! Velit nobis impedit iste architecto, dignissimos, quam tenetur natus, ab aut deserunt non. Delectus, nostrum autem provident aperiam, voluptatem temporibus veritatis quasi ad et necessitatibus soluta ea unde eligendi aspernatur architecto! Labore laboriosam sequi sapiente quia expedita dolorem vero doloremque modi officiis porro, magni, beatae consequuntur, ab dolorum. Doloribus veniam est soluta, repellendus nemo esse itaque doloremque dolorem iure neque modi cupiditate quis libero inventore corrupti? Eveniet porro quis officia modi sint adipisci nisi dicta! Eos magni asperiores laboriosam accusamus voluptatem veritatis officiis! Neque, nesciunt facilis nobis quis repudiandae omnis consequatur ratione, velit, sint illum ipsa assumenda commodi cupiditate magni fuga? Repudiandae ullam, culpa minima dolorum maxime, eligendi eaque odit dolor dolorem unde reprehenderit animi dolore modi, eos non vero ad rerum officiis neque! Ex sequi veritatis, harum, doloremque deserunt tenetur adipisci, praesentium culpa minima dolorem reprehenderit quas iure. Harum ipsa eius, officia, rerum magni neque, debitis iure culpa placeat adipisci dolore dolores minima tempora nesciunt nostrum. Ducimus nemo perferendis tenetur corrupti nulla fugiat quam quas officiis harum, eligendi quod quo id alias suscipit facere sunt, nisi minus possimus ipsam excepturi labore! Consequuntur ducimus provident illum rerum, optio amet neque dolores quia repellendus in debitis sed eum, cum soluta fugiat. Error, inventore quasi exercitationem perferendis porro illo culpa adipisci blanditiis suscipit alias eveniet, numquam repellendus iure maxime quidem molestias in dignissimos recusandae? Consequatur, autem quidem! Autem neque libero nulla repellendus asperiores, beatae voluptates ipsum inventore, facilis sed nobis fugit?</p>
+        </div>
+        <div>
+            <p class="two"><img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt=""> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quidem officiis id cumque reiciendis odit! Necessitatibus quia quo fugiat rerum at recusandae hic blanditiis, ut ipsum voluptatem nobis nemo eius eaque inventore explicabo quibusdam sunt doloremque laboriosam deleniti quae, quis tenetur eveniet voluptate aliquam. Qui perspiciatis quisquam esse ipsam tempora suscipit facere laborum. Corporis consequatur saepe nemo voluptatum ducimus eaque velit vero eius quidem officiis quo illo debitis assumenda, dolore quam. Ex eos voluptatibus veritatis et, ratione labore, quos quae possimus distinctio fugiat earum reiciendis tempora facilis dignissimos impedit porro! Sit magnam voluptatem adipisci, accusantium, nulla laudantium quos minus inventore delectus facere reiciendis animi? Amet sed cum at magnam nulla. Quisquam non voluptates fuga soluta iusto quibusdam nesciunt iste quod quidem fugiat magnam, nisi incidunt est quo ipsum nemo in dolorum natus unde sit. Sint dolor odio quod repellat, minus, laboriosam facilis nisi provident officia mollitia voluptatem porro enim fugiat reprehenderit nostrum sit! Expedita odio repellat similique quasi fugiat tempora magni sequi consequuntur doloremque maxime ea accusamus dolorum quae, ipsam sint dolor veritatis, nisi vitae obcaecati modi aspernatur perspiciatis, error officiis eveniet. Provident laboriosam eaque harum aliquid ducimus praesentium vero molestiae quae dicta facere velit exercitationem ipsum iure inventore ratione, hic temporibus sequi sapiente cumque iste nemo veritatis ad? Aliquid, eaque possimus? Voluptatum, neque? Corrupti omnis repellendus voluptatibus dignissimos quo nisi maiores? Asperiores, eaque ut. Ducimus reiciendis doloribus accusantium quidem sequi ipsa illo sapiente repellat dolorem provident vero ullam officia fugiat voluptatum facere quam rerum veritatis inventore amet, illum laudantium?</p>
+        </div>
+        <div>
+            <p class="three"><img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, excepturi odit sit asperiores repudiandae quasi incidunt perferendis architecto. Amet quas eius ipsum est doloribus, esse fugit quod accusantium dolor non alias voluptatem sit distinctio aliquam, numquam cumque rerum repellendus animi nulla fugiat, temporibus excepturi eligendi? Velit natus aperiam necessitatibus esse inventore nihil beatae earum officiis ut, totam laudantium quasi laborum autem cumque accusamus, amet, qui rerum adipisci! Amet repellat molestiae nisi ipsum, vero natus doloribus nulla voluptates placeat provident totam tempora non quos eos, accusantium voluptas velit! Cum aliquid perspiciatis laboriosam quibusdam, ipsa debitis corporis earum odio, hic recusandae ex. Excepturi labore, inventore quas, laborum veritatis earum est molestiae cum debitis soluta tempora. Dolor repudiandae libero, numquam labore impedit officiis quaerat voluptatum sequi perspiciatis ad aperiam, iste repellendus sunt molestias vel ex minus praesentium nulla! Voluptatem, neque maiores fugit provident ab deleniti vel ratione dicta fugiat voluptates? Facilis dolorum voluptate ex commodi ut blanditiis quia quidem numquam cupiditate mollitia praesentium quam et laboriosam eum vitae doloribus minus quisquam aperiam, qui illo labore necessitatibus recusandae architecto nam! Tempore dolor natus officia eum consequuntur eaque numquam recusandae molestiae harum, sed laudantium illum quas dolore voluptate fugiat magni nihil minima! Eveniet odit dolorem provident voluptatem molestias obcaecati sed similique, voluptates fugit adipisci repellat illo iste culpa totam asperiores ipsa harum neque ratione natus libero veniam! Ducimus ullam aperiam doloribus beatae. Officia quisquam placeat iusto cupiditate! Et nam, expedita inventore, maxime, vitae laudantium veniam possimus non quidem optio soluta quisquam consequuntur hic amet laborum.</p>
+        </div>
+    </main>
+</body>
+
+</html>
